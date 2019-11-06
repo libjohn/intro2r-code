@@ -128,6 +128,13 @@ ggplot(data = starwars, aes(x = height, y = fav_rating)) +
 Is a character's favorability dependent on their individual height?
 
 ```{r}
+ggplot(data = starwars, aes(x = height, y = mass)) +
+  geom_point()
+```
+
+
+
+```{r}
 sw_joined %>% 
   drop_na(fav_rating) %>% 
   ggplot(aes(x = height, y = fav_rating)) +
