@@ -4,7 +4,7 @@
     <title>Introduction to R</title>
     <meta charset="utf-8" />
     <meta name="author" content="John Little" />
-    <meta name="date" content="2019-09-11" />
+    <meta name="date" content="2019-11-07" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
     <link href="libs/remark-css/duke-blue.css" rel="stylesheet" />
@@ -19,7 +19,7 @@ class: center, middle, inverse, title-slide
 # Introduction to R
 ## an Rfun event
 ### John Little
-### 2019-09-11
+### 2019-11-07
 
 ---
 
@@ -51,13 +51,17 @@ class: center, middle, inverse, title-slide
 class: middle
 ## URLs for Today
 
-- Slide Deck -- https://rfun.library.duke.edu/intro2r/slides/
+- Slide Deck -- https://rfun.library.duke.edu/intro2r/slides
 
-- Shareable Code:  GitHub Repository - https://is.gd/intro2r_2019spring
+- Shareable Code:  GitHub Repository
+
+    - https://github.com/libjohn/intro2r-code
 
 - Intro to R: Online Guide -- https://rfun.library.duke.edu/intro2r
 
 - Cloud -- https://is.gd/gentler
+
+- Rfun -- https://rfun.library.duke.edu
 
 ---
 class:  middle
@@ -483,7 +487,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 (function() {

@@ -48,13 +48,17 @@ options(htmltools.dir.version = FALSE)
 class: middle
 ## URLs for Today
 
-- Slide Deck -- https://rfun.library.duke.edu/intro2r/slides/
+- Slide Deck -- https://rfun.library.duke.edu/intro2r/slides
 
-- Shareable Code:  GitHub Repository - https://is.gd/intro2r_2019spring
+- Shareable Code:  GitHub Repository
+
+    - https://github.com/libjohn/intro2r-code
 
 - Intro to R: Online Guide -- https://rfun.library.duke.edu/intro2r
 
 - Cloud -- https://is.gd/gentler
+
+- Rfun -- https://rfun.library.duke.edu
 
 ---
 class:  middle

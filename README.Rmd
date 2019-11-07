@@ -18,6 +18,8 @@ output: github_document
     
 - Slides - https://rfun.library.duke.edu/intro2r/slides
 
+- Video - https://youtu.be/NtfHcNlwSEY
+
 - Surveys
 
     - [Pre-survey](https://forms.gle/JNtwTQR3Jvk65Xev5)

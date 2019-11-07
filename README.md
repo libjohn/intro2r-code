@@ -1,7 +1,7 @@
 Intro to R
 ================
 John Little
-2019-11-06
+2019-11-07
 
 <!-- Edit the README.Rmd.  Readme.md is auto genererated -->
 
@@ -16,6 +16,8 @@ John Little
       - Rstudio.cloud: <https://is.gd/gentler>
 
   - Slides - <https://rfun.library.duke.edu/intro2r/slides>
+
+  - Video - <https://youtu.be/NtfHcNlwSEY>
 
   - Surveys
     
