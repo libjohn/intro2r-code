@@ -11,7 +11,7 @@ John Little
 
   - Repo / Code
     
-      - <https://is.gd/intro2r_2019spring>
+      - <https://github.com/libjohn/intro2r-code>
     
       - Rstudio.cloud: <https://is.gd/gentler>
 
