@@ -1,11 +1,16 @@
 ---
 title: "my first notebook"
-author: "‽"
-date: "today's date"
-output: html_notebook
+author: "John Little"
+date: "April 1, 2020"
+output:  html_notebook
+abstract: This is an [R Notebook](https://bookdown.org/yihui/rmarkdown/notebook.html)
+  techniques with code **inside** *code chunks*.  Outside the code chunks you can
+  write your prose to explain your goals, workflow, provenance, and code.  You can
+  illustrating [literate programming](https://en.wikipedia.org/wiki/Literate_programming)
+  enhance your prose with [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html)).
 ---
 
-This is an [R Notebook](https://rmarkdown.rstudio.com/r_notebooks.html) illustrating [literate programming](https://en.wikipedia.org/wiki/Literate_programming) techniques with code **inside** *code chunks*.  Outside the code chunks you can write your prose to explain your goals, workflow, provenance, and code.  You can enhance your prose with [R Markdown](http://rmarkdown.rstudio.com/)). 
+<p>
 
 You can execute code within the R Notebook. Results appear beneath the code.  R Markdown documents can be rendered into many formats including MS Word, Power Point, slides, web pages, web sites, and more. 
 
@@ -26,7 +31,9 @@ The preview shows you a rendered HTML copy of the contents of the editor. Conseq
 
 ###### https://rmarkdown.rstudio.com/r_notebooks.html
 
-# Packages and the Tidyverse
+# Load Library Packages 
+
+We like the tidyverse
 
 ###### https://tidyverse.org
 
@@ -40,7 +47,7 @@ library(tidyverse)
 
 This is my very first R Notebook.  
 
-My^[Your Name Here ;-j] *favorite **search** engines* are 
+My Your_Name_Here *favorite* **search** *engines* are 
 
 1. [Google](http://google.com)
 3. [Yahoo](http://yahoo.com)
@@ -57,6 +64,7 @@ My^[Your Name Here ;-j] *favorite **search** engines* are
 
 ```{r}
 canes <- read_csv("https://is.gd/bigstorms")
+cars2 <- read_csv("data/cars2.csv")
 ```
 
 ```{r}
@@ -78,6 +86,91 @@ glimpse(canes)
 ```
 
 
-# More information
+## Step One
 
-https://rfun.library.duke.edu/
+Run all code
+
+> Code > Run Region > Run All
+
+Preview Document
+
+Click Preview Button or press *Ctrl+Shift+K* 
+
+
+## Your Turn
+
+[Literate Coding with RMarkdown](https://rmarkdown.rstudio.com/lesson-1.html)
+
+1. Create an R Notebook  (A reproducible, literate code script)
+
+    - From the menubar:  `File > New File > R Notebook`      
+    - Remember this should be done WITHIN an R Project to ensure reproducibility.
+    - Inside the newly opened R Notebook, see/read the reminder help information found in the first twenty lines.
+    - Execute the code chunk consisting of the function `plot()` on the object `cars`
+ 
+2. Save the file as:  hello_world.Rmd
+
+    - PREVIEW the document:  click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file.
+    - You can delete lines 5-19 and modify lines 2 & 3, but you might want to keep that useful information for the moment 
+    
+        - See Also, [basic YAML header](https://bookdown.org/yihui/rmarkdown/html-document.html)
+
+3. Add a code chunk  AT THE TOP of your R Notebook
+
+Load the tidyverse library:  
+    
+```{r}
+library(tidyverse)
+```
+    
+View the starwars tibble inside of a code chunk
+
+```{r}
+starwars
+```
+
+
+
+4. Add a code chunk
+
+Write the `cars` dataframe to the data directory as `cars2.csv` 
+
+```{r}
+write_csv(cars, "data/cars3.csv")
+```
+
+
+Import the `cars3` CSV file.
+
+```{r}
+cars3 <- readr::read_csv("data/cars2.csv")
+```        
+
+Show a preview of the `cars3` data frame (Tibble).
+
+```{r}
+cars3
+```
+
+
+5. Add a code chunk and run some basic visualizations
+
+Paste at least one of the visualizations functions 
+
+```{r}
+starwars %>% ggplot(aes(height)) + geom_histogram()
+starwars %>% ggplot(aes(x = height, y = mass)) + geom_point()
+ggplot(data = starwars %>% filter(mass < 500), aes(x = height, y = mass)) + geom_point()
+starwars %>% ggplot(aes(hair_color)) + geom_bar()
+starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar()
+starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Color Frequency of Star Wars Characters")
+```
+
+
+## Reminder
+
+All the code can be found in the intro2r-code repository on Github previously downloaded and unzipped
+
+- https://github.com/libjohn/intro2r-code/archive/master.zip
+- Unzip the file
+- Open the project by double clicking the file: `intro2r-code.Rproj`
