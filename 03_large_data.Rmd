@@ -2,7 +2,6 @@
 title: "Importing Large Datasets in R"
 author: "John Little"
 date:  "`r Sys.Date()`"
-output: html_notebook
 ---
 
 Data importing can be a time sink and a major bottleneck.  If your data are large, you'll want to import the data in the most efficient manner.  The table below give some guides lines for import, depending on the size of your data.
@@ -187,15 +186,15 @@ profvis({
 # PNG Graphics
 
 ```{r message=FALSE, warning=FALSE}
-png("time_vs_dist.png", width=1024, height=800)
+png("images/time_vs_dist.png", width=1024, height=800)
 ggplot(flights_small, aes(y=AirTime,x=Distance)) +
   geom_point(alpha=0.01, size=0.5)
 
-ggsave("time_vs_dist_ggsave.png")
+ggsave("images/time_vs_dist_ggsave.png")
 ```
 
 
-![](time_vs_dist_ggsave.png)
+![](images/time_vs_dist_ggsave.png)
 
 
 ## Footnote

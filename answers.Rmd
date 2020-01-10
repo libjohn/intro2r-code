@@ -3,7 +3,7 @@ title: "Answers"
 date: "`r Sys.Date()`"
 ---
 
-## Part ZERO:  Data Structures & Vector Types
+## exercise_00:  Data Structures & Vector Types
 
 Use the Brodhead Center prebuilt a dataset that has information about menus from three restaurants in Duke's dining hall.  
 
@@ -35,7 +35,9 @@ glimpse(brodhead)
 ```
 
 
-## PART ONE: Loading Data & Data Wrangling
+## Exercise_01: Loading Data & Data Wrangling
+
+### Repeating from exercise_00
 
 All of the following questions are based on the sample of restaurants represented in the dataset which is accurate as of September 2, 2016.
 
@@ -50,7 +52,7 @@ library(tidyverse)
 brodhead <- read_csv("data/brodheadCenter.csv")
 ```
 
-### Part 01 : Data Wrangling
+### exercise_01 -- Data Wrangling
 
 1. Which restaurant has the lowest cost item and what is the item?
 
@@ -114,4 +116,4 @@ brodhead %>%
 ```
 
 
-# PART TWO:  
+ 

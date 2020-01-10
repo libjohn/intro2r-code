@@ -1,6 +1,5 @@
 ---
 title: "Exercise 0"
-output: html_notebook
 ---
 
 Goals:  
@@ -21,4 +20,13 @@ For the workshop, we've prebuilt a data set that has information about menus in 
 ## Exercise: Data Structures & Vector Types
 
 1. Using what you've seen in class, if `data/brodheadCenter.csv` is a CSV (comma separated values) file, how would you load the file into a new object called `brodhead`?
+
+> ANSWER can be found in answers.Rmd file
+
+2. What data structure is `brodhead`?
+
+3. Take a look at the structure of the `brodhead` object.
+    - How many observations (rows) are there?
+    - How many variables (columns) are there?
+    - How many of the variables are numeric data?
 
