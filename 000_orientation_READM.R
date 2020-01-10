@@ -32,11 +32,12 @@ numbers
 answer * numbers
 answer2 <- (answer / 4) * numbers
 answer2
-names <- c("neha", "jinyuan", "stella")
+first_names <- c("neha", "jinyuan", "stella")
 cars$speed + 5
 
 
 # Load a Library Package & make simple visualizations
+library(tidyverse)
 View(starwars)
 starwars %>% ggplot(aes(height)) + geom_histogram()
 starwars %>% ggplot(aes(x = height, y = mass)) + geom_point()
