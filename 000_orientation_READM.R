@@ -36,23 +36,18 @@ first_names <- c("neha", "jinyuan", "stella")
 cars$speed + 5
 
 
-# Load a Library Package & make simple visualizations
-library(tidyverse)
-View(starwars)
-starwars %>% ggplot(aes(height)) + geom_histogram()
-starwars %>% ggplot(aes(x = height, y = mass)) + geom_point()
-ggplot(data = starwars %>% filter(mass < 500), aes(x = height, y = mass)) + geom_point()
-starwars %>% ggplot(aes(hair_color)) + geom_bar()
-starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar()
-starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Color Frequency of Star Wars Characters")
-
+# Literate Coding with RMarkdown
+# https://rmarkdown.rstudio.com/lesson-1.html
+# 
 # Create an R Notebook  (A reproducible, literate code script)
 # 1.
-# From the menubar:  File > New File > R Notebook      # Remember this should be done WITHIN an R Project to ensure reproducibility
+# From the menubar:  File > New File > R Notebook      
+# Remember this should be done WITHIN an R Project to ensure reproducibility.
 # Inside the newly opened R Notebook, see/read the reminder help information found in the first twenty lines.
-# execute the code chunk consisting of the function `plot()` on the object `cars`
+# Execute the code chunk consisting of the function `plot()` on the object `cars`
  
 # 2.
+# Save the file as:  hello_world.Rmd
 # PREVIEW the document:  click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file.
 #
 # You can delete lines 5-19 and modify lines 2 & 3 
@@ -62,17 +57,25 @@ starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Co
 
 # 3.
 # Add a code chunk
+# write the cars dataframe to the data directory:  
 # import the `cars2` CSV file:  cars2 <- readr::read_csv("data/cars2.csv")
 # Show a preview of the `cars2` data frame in:   cars2
 
 # 4.
 # Add a code chunk  AT THE TOP of your R Notebook
-# Load the tidyverse library:  library(tidyverse)
+# Load the tidyverse library:  
+library(tidyverse)
+# View the starwars tibble inside of a code chunk
 
 # 5.
 # Add a code chunk at the bottom
 # Paste at least one of the visualizations commands 
-# e.g.:  starwars %>% ggplot(aes(height)) + geom_histogram()
+starwars %>% ggplot(aes(height)) + geom_histogram()
+starwars %>% ggplot(aes(x = height, y = mass)) + geom_point()
+ggplot(data = starwars %>% filter(mass < 500), aes(x = height, y = mass)) + geom_point()
+starwars %>% ggplot(aes(hair_color)) + geom_bar()
+starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar()
+starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Color Frequency of Star Wars Characters")
 
 # 6.
 # Previously you downloaded and unzipped the intro2r code repo from GitHub 
