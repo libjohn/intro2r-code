@@ -167,6 +167,11 @@ starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Co
 ```
 
 
+## Preview your report
+
+Click the preview button or `Ctrl+Shift+K`
+
+
 ## Reminder
 
 All the code can be found in the intro2r-code repository on Github previously downloaded and unzipped
