@@ -1,7 +1,7 @@
 Intro to R
 ================
 John Little
-2020-01-13
+2020-01-14
 
 <!-- Edit the README.Rmd.  Readme.md is auto genererated -->
 
@@ -22,7 +22,7 @@ John Little
       - [Pre-survey](https://forms.gle/2TFpaLbB6KSXGhsi9)
       - [Questions DURING
         workshop](https://docs.google.com/document/d/1bToe1XxULs_VJYMXVBJ-Fk5AJRHVRyOxQ3PVnYVe3jg/edit?usp=sharing)
-      - [Post-Survey](https://forms.gle/915TJZ731cctopHs8)
+      - [Post-Survey](https://forms.gle/eB6SeDbCFRTmR8tq6)
 
 ## Resources
 
