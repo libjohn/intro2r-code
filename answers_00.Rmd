@@ -1,0 +1,43 @@
+---
+title: "Answers - Excercise 00"
+date: "`r Sys.Date()`"
+---
+
+## exercise 00:  
+
+Answers to steps 1 and 2 are desribed in the `00_import-data_literate-programming.Rmd` document.
+
+3. 
+
+```{r}
+library(tidyverse)
+```
+
+
+4.
+
+```{r}
+cars2 <- read_csv("data/cars2.csv")
+```
+
+
+5.
+
+```{r}
+cars2
+```
+
+
+6.
+
+```{r}
+starwars
+```
+
+
+```{r}
+starwars %>% 
+  ggplot(aes(fct_infreq(hair_color))) + 
+  geom_bar() + 
+  ggtitle("Hair Color Frequency of Star Wars Characters")
+```

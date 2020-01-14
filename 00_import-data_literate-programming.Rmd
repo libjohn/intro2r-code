@@ -3,11 +3,7 @@ title: "my first notebook"
 author: "John Little"
 date: "April 1, 2020"
 output:  html_notebook
-abstract: This is an [R Notebook](https://bookdown.org/yihui/rmarkdown/notebook.html)
-  techniques with code **inside** *code chunks*.  Outside the code chunks you can
-  write your prose to explain your goals, workflow, provenance, and code.  You can
-  illustrating [literate programming](https://en.wikipedia.org/wiki/Literate_programming)
-  enhance your prose with [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html)).
+abstract: This is an [R Notebook](https://bookdown.org/yihui/rmarkdown/notebook.html) techniques with code **inside** *code chunks*.  Outside the code chunks you can write your prose to explain your goals, workflow, provenance, and code.  You can illustrating [literate programming](https://en.wikipedia.org/wiki/Literate_programming) enhance your prose with [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html)).
 ---
 
 <p>
@@ -111,11 +107,11 @@ class(canes)
 glimpse(canes)
 ```
 
-## Your TURN
+## Your TURN -- Excercise 00
 
-Create a new R Notebook and add some code to load a library, import some CSV data, and view the imported data frame.
+Create a new R Notebook and add some code to load a library, import some CSV data, and view the imported data frame.  In this exercise you will also practice separated prose from code chunks to begin implementing literate coding.
 
-### Step One
+### Setup...
 
 Run all code
 
@@ -127,8 +123,7 @@ Preview Document
 2. IMPORTANT:  click the _open in browser_ button at the top of that preview page
 3. Now scroll down to the bottom of that document and follow the DIRECTIONS section.
 
-
-## DIRECTIONS
+### DIRECTIONS
 
 1. Create an R Notebook  (A reproducible, literate code script)
 
@@ -144,13 +139,13 @@ Preview Document
     
         - See Also, [basic YAML header](https://bookdown.org/yihui/rmarkdown/html-document.html)
 
-3. Add a code chunk  AT THE TOP of your `hello_world.Rmd` Notebook.  Load the tidyverse library package.
-4. Display the on-board `starwars` data frame.  It's available after you load the tidyverse.
-5. View the `starwars` tibble inside of a code chunk.
-5. Import the `cars2` CSV file and asign it to the object name, `cars2`
-6. View the `cars2` data frame, or Tibble as it's know in Tidyverse language.
+3. Add a code chunk  AT THE TOP of your `hello_world.Rmd` Notebook -- approximately line 6.  Load the tidyverse library package
+4. Import the `cars2` CSV file and asign it to the object name, `cars2`
+5. View the `cars2` data frame, or Tibble as it's know in Tidyverse language.
+6. Display the on-board `starwars` data frame.  It's available after you loaded the `tidyverse` package in step 3
 7. Add a code chunk and run some basic visualizations
-8. Paste at least one of the visualizations functions 
+
+    - Paste at least one line from the code below.  This will craete a visualizations of some _Star Wars_ characters' features and traits
 
 ```
 starwars %>% ggplot(aes(height)) + geom_histogram()
@@ -161,10 +156,13 @@ starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar()
 starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Color Frequency of Star Wars Characters")
 ```
 
+### Preview your report
 
-## Preview your report
+8. Click the preview button or `Ctrl+Shift+K`
 
-9. Click the preview button or `Ctrl+Shift+K`
+### Answers
+
+Find answers in the `answers_00.Rmd` file
 
 
 ## Reminder
