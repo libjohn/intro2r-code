@@ -24,6 +24,14 @@ John Little
         workshop](https://docs.google.com/document/d/1bToe1XxULs_VJYMXVBJ-Fk5AJRHVRyOxQ3PVnYVe3jg/edit?usp=sharing)
       - [Post-Survey](https://forms.gle/915TJZ731cctopHs8)
 
+## Resources
+
+  - [Rfun](https://library.duke.edu/rfun)
+  - [Center for Data & Visualization
+    Services](https://library.duke.edu/data/)
+  - CDVS Email: <AskData@duke.edu>
+  - [RStudio Primers](https://rstudio.cloud/learn/primers/)
+
 ### License
 
 Shareable via Creative Commons:
