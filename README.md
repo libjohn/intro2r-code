@@ -1,7 +1,7 @@
 Intro to R
 ================
 John Little
-2019-11-07
+2020-01-13
 
 <!-- Edit the README.Rmd.  Readme.md is auto genererated -->
 
@@ -12,8 +12,6 @@ John Little
   - Repo / Code
     
       - <https://github.com/libjohn/intro2r-code>
-    
-      - Rstudio.cloud: <https://is.gd/gentler>
 
   - Slides - <https://rfun.library.duke.edu/intro2r/slides>
 
@@ -21,9 +19,10 @@ John Little
 
   - Surveys
     
-      - [Pre-survey](https://forms.gle/JNtwTQR3Jvk65Xev5)
-      - [Post-Survey](https://forms.gle/Mwnm7ET8WPDi2Bic9)
-      - Questions during workshop
+      - [Pre-survey](https://forms.gle/2TFpaLbB6KSXGhsi9)
+      - [Questions DURING
+        workshop](https://docs.google.com/document/d/1bToe1XxULs_VJYMXVBJ-Fk5AJRHVRyOxQ3PVnYVe3jg/edit?usp=sharing)
+      - [Post-Survey](https://forms.gle/915TJZ731cctopHs8)
 
 ### License
 
