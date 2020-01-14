@@ -14,14 +14,16 @@ abstract: This is an [R Notebook](https://bookdown.org/yihui/rmarkdown/notebook.
 
 You can execute code within the R Notebook. Results appear beneath the code.  R Markdown documents can be rendered into many formats including MS Word, Power Point, slides, web pages, web sites, and more. 
 
-Try executing the code chunk, below, by clicking the green-arrow *Run* button (within the chunk), or by placing your cursor inside the chunk and pressing *Ctrl+Shift+Enter.*
+Try executing the **code chunk**, below, by clicking the green-arrow *Run* button (within the chunk), or by placing your cursor inside the chunk and pressing *Ctrl+Shift+Enter.*
 
 
 ```{r}
 plot(cars)
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+## Code Chunks
+
+Add a new code chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
@@ -31,21 +33,36 @@ The preview shows you a rendered HTML copy of the contents of the editor. Conseq
 
 ###### https://rmarkdown.rstudio.com/r_notebooks.html
 
-# Load Library Packages 
+## Load Library Packages 
 
-We like the tidyverse
+We like the [tidyverse](https://tidyverse.org).  The tidyverse is a collection of R packages that enable a modern approach to data science and data manipulation.  The packages share a common philosophy and employ a consistent approach to documentation.  Package [documentation can be explored on the web](https://www.tidyverse.org/packages/).
 
-###### https://tidyverse.org
+The Tidyverse is a mega package that loads eight packages at once.
+
 
 ```{r}
 library(tidyverse)
 ```
 
+Packages are a means to extend R's functionality into your domain of interest.  The tidyverse is a general interest set of packages concerned with data science and data manipulation.  It just makes R programming easier.
+
+Packages ....
+
+1. Only need to be installed once  `install.packages("tidyverse)`
+1. Need to be loaded during every R session   `library(tidyverse)`
+
+Before we go any further, let's export some CSV data so we can practice importing that data later.
+
+```{r}
+write_csv(cars, "data/cars2.csv")
+```
 
 
-# Hello World
+## R Markdown
 
-This is my very first R Notebook.  
+Markdown is a minimal "mark up" language that enables document structure affected when you **render** (or *preview*, or *knit*) the R Markdown Notebook script (.Rmd) into your chosen report format (HTML notebook, MS Word file, PDF Document, e-book, web site, dashboard, slides, PPT slides, etc.)
+
+Below is an example of some R Markdown in an R Notebook.  Preview this document to see how it renders.
 
 My Your_Name_Here *favorite* **search** *engines* are 
 
@@ -53,22 +70,31 @@ My Your_Name_Here *favorite* **search** *engines* are
 3. [Yahoo](http://yahoo.com)
 2. [Bing](http://bing.com)
 
-###### https://rmarkdown.rstudio.com/
+You can get more information about getting started with [R Markdown](https://rmarkdown.rstudio.com/)
 
-# Load Data
 
-###### https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio
-###### https://www.rstudio.com/resources/webinars/importing-data-into-r/
 
-### Hurricane data from github
+## Load Data
+
+The following links provide documentation on loading data into R
+
+- https://support.rstudio.com/hc/en-us/articles/218611977-Importing-Data-with-RStudio
+- https://www.rstudio.com/resources/webinars/importing-data-into-r/
+
+### Hurricane data 
+
+Let's load some data.  Below we import hurricane data from the web (from github) and assign that data to the `canes` object.  Next we import a CSV file from the data directory and assign that to the `cars2` 
 
 ```{r}
 canes <- read_csv("https://is.gd/bigstorms")
 cars2 <- read_csv("data/cars2.csv")
 ```
 
+Now you can see that data by calling 
+
 ```{r}
 canes
+# How do you see the cars2 data frame?
 ```
 
 have a look at the data structures and data types
@@ -85,8 +111,11 @@ class(canes)
 glimpse(canes)
 ```
 
+## Your TURN
 
-## Step One
+Create a new R Notebook and add some code to load a library, import some CSV data, and view the imported data frame.
+
+### Step One
 
 Run all code
 
@@ -94,12 +123,12 @@ Run all code
 
 Preview Document
 
-Click Preview Button or press *Ctrl+Shift+K* 
+1. Click Preview Button or press *Ctrl+Shift+K* 
+2. IMPORTANT:  click the _open in browser_ button at the top of that preview page
+3. Now scroll down to the bottom of that document and follow the DIRECTIONS section.
 
 
-## Your Turn
-
-[Literate Coding with RMarkdown](https://rmarkdown.rstudio.com/lesson-1.html)
+## DIRECTIONS
 
 1. Create an R Notebook  (A reproducible, literate code script)
 
@@ -115,49 +144,15 @@ Click Preview Button or press *Ctrl+Shift+K*
     
         - See Also, [basic YAML header](https://bookdown.org/yihui/rmarkdown/html-document.html)
 
-3. Add a code chunk  AT THE TOP of your R Notebook
+3. Add a code chunk  AT THE TOP of your `hello_world.Rmd` Notebook.  Load the tidyverse library package.
+4. Display the on-board `starwars` data frame.  It's available after you load the tidyverse.
+5. View the `starwars` tibble inside of a code chunk.
+5. Import the `cars2` CSV file and asign it to the object name, `cars2`
+6. View the `cars2` data frame, or Tibble as it's know in Tidyverse language.
+7. Add a code chunk and run some basic visualizations
+8. Paste at least one of the visualizations functions 
 
-Load the tidyverse library:  
-    
-```{r}
-library(tidyverse)
 ```
-    
-View the starwars tibble inside of a code chunk
-
-```{r}
-starwars
-```
-
-
-
-4. Add a code chunk
-
-Write the `cars` dataframe to the data directory as `cars2.csv` 
-
-```{r}
-write_csv(cars, "data/cars3.csv")
-```
-
-
-Import the `cars3` CSV file.
-
-```{r}
-cars3 <- readr::read_csv("data/cars2.csv")
-```        
-
-Show a preview of the `cars3` data frame (Tibble).
-
-```{r}
-cars3
-```
-
-
-5. Add a code chunk and run some basic visualizations
-
-Paste at least one of the visualizations functions 
-
-```{r}
 starwars %>% ggplot(aes(height)) + geom_histogram()
 starwars %>% ggplot(aes(x = height, y = mass)) + geom_point()
 ggplot(data = starwars %>% filter(mass < 500), aes(x = height, y = mass)) + geom_point()
@@ -169,7 +164,7 @@ starwars %>% ggplot(aes(fct_infreq(hair_color))) + geom_bar() + ggtitle("Hair Co
 
 ## Preview your report
 
-Click the preview button or `Ctrl+Shift+K`
+9. Click the preview button or `Ctrl+Shift+K`
 
 
 ## Reminder

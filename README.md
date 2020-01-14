@@ -19,10 +19,10 @@ John Little
 
   - Surveys
     
-      - [Pre-survey](https://forms.gle/2TFpaLbB6KSXGhsi9)
+      - [Pre-survey](https://forms.gle/dhzW1iS7mrfG5RLUA)
       - [Questions DURING
-        workshop](https://docs.google.com/document/d/1bToe1XxULs_VJYMXVBJ-Fk5AJRHVRyOxQ3PVnYVe3jg/edit?usp=sharing)
-      - [Post-Survey](https://forms.gle/eB6SeDbCFRTmR8tq6)
+        workshop](https://docs.google.com/document/d/12jSpxo25xKaJClatcS2n2waRuKysCqkVvXQecStFnAk/edit?usp=sharing)
+      - [Post-Survey](https://forms.gle/X4DNmLmRUsTq7wvTA)
 
 ## Resources
 
