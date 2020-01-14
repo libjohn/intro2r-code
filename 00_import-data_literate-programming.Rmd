@@ -139,7 +139,7 @@ Preview Document
     
         - See Also, [basic YAML header](https://bookdown.org/yihui/rmarkdown/html-document.html)
 
-3. Add a code chunk  AT THE TOP of your `hello_world.Rmd` Notebook -- approximately line 6.  Load the tidyverse library package
+3. Add a code chunk AT THE TOP of your `hello_world.Rmd` Notebook -- approximately line 6 --, then load the tidyverse library package.  Now shift to the bottom and add a code chunk for each question...
 4. Import the `cars2` CSV file and asign it to the object name, `cars2`
 5. View the `cars2` data frame, or Tibble as it's know in Tidyverse language.
 6. Display the on-board `starwars` data frame.  It's available after you loaded the `tidyverse` package in step 3

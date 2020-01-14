@@ -26,3 +26,6 @@ cars$speed + 5
 
 ```
 
+The above is not an example of literate coding.  
+
+Next up....  R Markdown, R Notebooks, and literate coding.
