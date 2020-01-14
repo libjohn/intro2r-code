@@ -1,49 +1,18 @@
 ---
-title: "Answers 01 - dplyr"
+title: "Answers 01 - dplyr -- data wrangling"
+output: html_notebook
 ---
 
-Use the Brodhead Center prebuilt a dataset that has information about menus from three restaurants in Duke's dining hall.  
+### Setup
 
-You should have created a new R Notebook, and each notebook should be self contained.  This means you should load the packages and data again, even though you did that in the previous exercise.
-
-1. Using what we've you've seen in class, if `brodheadCenter.csv` is a csv file, how would you load the file into a new object called `brodhead`?
+3. Load the `tidyverse` library package
 
 ```{r}
 library(tidyverse)
-brodhead <- read_csv("data/brodheadCenter.csv")
-# or 
-# brodhead <- read_csv("https://raw.githubusercontent.com/data-and-visualization/Intro2R/master/data/brodheadCenter.csv")
-```
-
-2. What data structure is `brodhead`?
-
-```{r}
-class(brodhead)
 ```
 
 
-3. Take a look at the structure of the `brodhead` object.
-    - How many observations (rows) are there?
-    - How many variables (columns) are there?
-    - How many of the variables are numeric data?
-    
-```{r}
-glimpse(brodhead)
-```
-
-
-## Exercise_01: Loading Data & Data Wrangling
-
-### Repeating from exercise_00
-
-All of the following questions are based on the sample of restaurants represented in the dataset which is accurate as of September 2, 2016.
-
-#### Load Packages
-```{r}
-library(tidyverse)
-```
-
-#### Load Data
+4.
 
 ```{r}
 brodhead <- read_csv("data/brodheadCenter.csv")
@@ -59,6 +28,14 @@ brodhead %>%
   select(name, type, itemName, cost)
 ```
 
+#### Alternative Answer
+
+```{r}
+brodhead %>% 
+  filter(cost == min(cost)) %>% 
+  select(name, type, itemType, cost)
+  
+```
 
 2. Which restaurant has the most expensive item(s)?  What are those item(s)?
 
@@ -68,25 +45,19 @@ brodhead %>%
   select(name, type, itemName, cost)
 ```
 
-##### Alternative Answer
+#### Alternative Answer
 
-```{r include=FALSE}
-answer <- brodhead %>% 
-  arrange(desc(cost)) %>% 
-  filter(type == "restaurant") %>% 
-  select(name, type, itemName, cost) %>% 
-  head(1) 
-
+```{r}
 answer2 <- brodhead %>% 
   select(name, type, itemName, cost) %>% 
   filter(type == "restaurant",
          cost == max(cost)) 
+answer2
 ```
 
+#### Example of inline coding (Render report to see result)
 
-The **`r answer$name`** *`r answer$type`* has the most expensive item(s) at $`r answer$cost`.  Those item(s) are `r answer$itemName`.
-
-The **`r answer2$name[1]`** *`r answer2$type[1]`* has the most expensive item(s) @ $`r answer2$cost[1]`.  Those item(s) are `r answer2$itemName`.
+The **`r answer2$name[1]`** *`r answer2$type[1]`* has the most expensive item(s) at $`r answer2$cost[1]`.  Those item(s) are `r answer2$itemName`.
 
 3. At the Brodhead Center, how many of the entrees (found in the `menuType` variable) cost eight dollars?
 

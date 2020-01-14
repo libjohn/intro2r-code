@@ -16,7 +16,8 @@ output: html_notebook
 - Summarize
 
 ```{r}
-library(dplyr)
+library(tidyverse)   # includes dplyr
+library(dplyr)       # this line is redundant and serves only to emphasize the focus on dplyr
 ```
 
 
