@@ -67,12 +67,32 @@ brodhead %>%
   select(name, menuType, itemName, cost)
 ```
 
+The **answer** is 8.  You know this because the Tibble (data frame) has 8 rows.  
 
-4. The head of Duke dining is considering reducing prices at the Brodhead Center. Using what we've learned in class, write a line of code that will calculate a new variable (`halfPrice`) that contains items at half price.
+#### Alternative Answer 1
 
 ```{r}
 brodhead %>% 
-  mutate(halfPrice = cost / 2) %>% 
+  filter(cost == 8, menuType == "entree") %>% 
+  select(name, menuType, itemName, cost) %>% 
+  count(menuType)
+```
+
+#### Alternative Answer 2
+
+```{r}
+eight_dollar_items <- brodhead %>% 
+  filter(cost == 8, menuType == "entree") %>% 
+  select(name, menuType, itemName, cost) 
+
+length(eight_dollar_items$itemName)
+```
+
+4. The head of Duke dining is considering reducing prices at the Brodhead Center. Using what we've learned in class, write code that will calculate a new variable (`halfPrice`) that contains items at half price.
+
+```{r}
+brodhead %>% 
+  mutate(halfPrice = (cost / 2)) %>% 
   select(name, itemName, cost, halfPrice)
 ```
 
@@ -81,4 +101,5 @@ brodhead %>%
 ```{r}
 brodhead %>% 
   count(menuType)
+# You can use `filter()` to limit by menuType
 ```
