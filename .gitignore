@@ -15,7 +15,6 @@ data/*.feather
 2008.csv
 cars2.csv
 cars3.csv
-00_import-data_literate-programming.nb.html
 
 # Example code in package build process
 *-Ex.R

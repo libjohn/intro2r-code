@@ -86,22 +86,22 @@ canes <- read_csv("https://is.gd/bigstorms")
 cars2 <- read_csv("data/cars2.csv")
 ```
 
-Now you can see that data by calling 
+display the new data by calling the new object name 
 
 ```{r}
 canes
 # How do you see the cars2 data frame?
 ```
 
-have a look at the data structures and data types
+### data structures and data types
 
-###### http://r4ds.had.co.nz/tibbles.html
+- http://r4ds.had.co.nz/tibbles.html
 
 ```{r}
 class(canes)
 ```
 
-###### http://r4ds.had.co.nz/vectors.html
+- http://r4ds.had.co.nz/vectors.html
 
 ```{r}
 glimpse(canes)
