@@ -1,6 +1,7 @@
 ---
 title: "Answers - Excercise 00"
 date: "`r Sys.Date()`"
+output: html_notebook
 ---
 
 ## exercise 00:  
@@ -12,6 +13,7 @@ library(tidyverse)
 ```
 
 
+4. and 
 5.
 
 ```{r}

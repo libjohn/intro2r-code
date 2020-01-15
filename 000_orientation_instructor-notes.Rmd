@@ -4,7 +4,7 @@ title: "Orientation / Instructor Notes"
 
 ## Projects, Notebooks, import/export, display
 
-0. download intro2r-code repo and open the .Rproj
+0. Download intro2r-code repo and open the .Rproj
 1. Ask students to create a blank new RStudio Project: "hello world"
 1. Create a Blank R Notebook (prose [w R Markdown] & code chunks)
 1. Save the file:  hello_notebook.Rmd

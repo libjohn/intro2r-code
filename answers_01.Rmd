@@ -5,14 +5,14 @@ output: html_notebook
 
 ### Setup
 
-3. Load the `tidyverse` library package
+a. Load the `tidyverse` library package
 
 ```{r}
 library(tidyverse)
 ```
 
 
-4.
+b.
 
 ```{r}
 brodhead <- read_csv("data/brodheadCenter.csv")
@@ -45,7 +45,7 @@ brodhead %>%
   select(name, type, itemName, cost)
 ```
 
-#### Alternative Answer
+#### Alternative Answers
 
 ```{r}
 answer2 <- brodhead %>% 
@@ -55,9 +55,20 @@ answer2 <- brodhead %>%
 answer2
 ```
 
-#### Example of inline coding (Render report to see result)
+```{r}
+expensive_items <- brodhead %>% 
+  select(name, type, itemName, cost) %>% 
+  filter(type == "restaurant",
+         cost == max(cost)) %>% 
+  select(name, itemName) 
+expensive_items
+```
 
-The **`r answer2$name[1]`** *`r answer2$type[1]`* has the most expensive item(s) at $`r answer2$cost[1]`.  Those item(s) are `r answer2$itemName`.
+**Example of inline coding** (Render report to see result.)
+
+
+The `r unique(expensive_items$name)` restaurant offers the following items at the highest cost:  `r expensive_items$itemName`.
+
 
 3. At the Brodhead Center, how many of the entrees (found in the `menuType` variable) cost eight dollars?
 
@@ -69,7 +80,7 @@ brodhead %>%
 
 The **answer** is 8.  You know this because the Tibble (data frame) has 8 rows.  
 
-#### Alternative Answer 1
+#### Alternative Answer
 
 ```{r}
 brodhead %>% 
@@ -78,7 +89,7 @@ brodhead %>%
   count(menuType)
 ```
 
-#### Alternative Answer 2
+#### Alternative Answer
 
 ```{r}
 eight_dollar_items <- brodhead %>% 
@@ -103,3 +114,4 @@ brodhead %>%
   count(menuType)
 # You can use `filter()` to limit by menuType
 ```
+
