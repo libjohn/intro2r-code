@@ -26,6 +26,19 @@ cars$speed + 5
 
 ```
 
+
+```
+library(tidyverse)
+
+coffee_spots <- read_csv("data/starbux.csv")
+
+mpg %>% 
+  ggplot(aes(displ, hwy, color = class)) +
+  geom_point()
+```
+
+
+
 The above is not an example of literate coding.  
 
 Next up....  R Markdown, R Notebooks, and literate coding.
