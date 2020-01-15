@@ -1,7 +1,7 @@
 Intro to R
 ================
 John Little
-2020-01-14
+2020-01-15
 
 <!-- Edit the README.Rmd.  Readme.md is auto genererated -->
 
@@ -26,7 +26,7 @@ John Little
 
 ## Resources
 
-  - [Rfun](https://library.duke.edu/rfun)
+  - [Rfun](https://rfun.library.duke.edu/)
   - [Center for Data & Visualization
     Services](https://library.duke.edu/data/)
   - CDVS Email: <AskData@duke.edu>
