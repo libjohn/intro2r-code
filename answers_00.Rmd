@@ -5,8 +5,6 @@ date: "`r Sys.Date()`"
 
 ## exercise 00:  
 
-Answers to steps 1 and 2 are desribed in the `00_import-data_literate-programming.Rmd` document.
-
 3. 
 
 ```{r}
@@ -14,30 +12,40 @@ library(tidyverse)
 ```
 
 
-4.
-
-```{r}
-cars2 <- read_csv("data/cars2.csv")
-```
-
-
 5.
 
 ```{r}
-cars2
+brodhead <- read_csv("data/brodheadCenter.csv")
 ```
 
 
 6.
 
 ```{r}
-starwars
+brodhead
 ```
 
 
+7.
+
+```{r}
+starwars
+```
+
+8.
 ```{r}
 starwars %>% 
   ggplot(aes(fct_infreq(hair_color))) + 
   geom_bar() + 
   ggtitle("Hair Color Frequency of Star Wars Characters")
 ```
+
+
+9.
+```{r}
+glimpse(brodhead)
+```
+
+- How many observations (rows) are there?  59
+- How many variables (columns) are there?  7
+- How many of the variables are numeric data? 2

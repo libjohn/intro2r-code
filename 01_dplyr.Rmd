@@ -6,8 +6,6 @@ date: "`r Sys.Date()`"
 output: html_notebook
 ---
 
-# dplyr
-
 - filter  (rows)
 - arrange (sort rows by variables)
 - select (columns)
@@ -20,9 +18,10 @@ library(tidyverse)   # includes dplyr
 library(dplyr)       # this line is redundant and serves only to emphasize the focus on dplyr
 ```
 
+- http://r4ds.had.co.nz/transform.html#introduction-2
+- http://dplyr.tidyverse.org/
 
-###### http://r4ds.had.co.nz/transform.html#introduction-2
-###### http://dplyr.tidyverse.org/
+Display the `starwars` dataset.  This is an on-board dataset loaded when you load the `dplyr` or `tidyverse` library package.  
 
 ```{r}
 starwars
@@ -61,8 +60,6 @@ starwars_small %>%
   
 ```
 
-
-
 ## Mutate
 
 ```{r}
@@ -73,7 +70,6 @@ starwars_small %>%
   mutate(BMI = round(height / mass, 2))
 ```
 
-
 ## Count
 
 ```{r}
@@ -82,7 +78,6 @@ starwars %>%
   tidyr::drop_na() %>% 
   arrange(desc(n))
 ```
-
 
 ## Summarize
 
@@ -96,6 +91,6 @@ starwars %>%
 ```
 
 
-# More information
+## More information
 
 https://rfun.library.duke.edu/intro2r

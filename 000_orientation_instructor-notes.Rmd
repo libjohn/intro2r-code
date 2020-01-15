@@ -2,6 +2,20 @@
 title: "Orientation / Instructor Notes"
 ---
 
+## Projects, Notebooks, import/export, display
+
+1. Ask students to create a blank new RStudio Project: "hello world"
+1. Create a Blank R Notebook (prose [w R Markdown] & code chunks)
+1. Insert Code Chunk and `library(tidyverse) ; library(fs)`
+1. fs::dir_create("data")  -- click New Folder ; data
+1. Insert Code Chunk and `write_csv(mpg, "data/mpg2.csv")`
+1. Insert Code Chunk and `mpg_2 <- read_csv("data/mpg2.csv")`
+1. Insert Code Chunk and `mpg_2`
+1. Save the file:  hello_notebook.Rmd
+1. Preview the file:  *Ctrl+Shift+K* 
+1. Click the "Open in Browser" button
+
+
 ```{r}
 # In the Console Tab
 
@@ -21,24 +35,17 @@ numbers
 answer * numbers
 answer2 <- (answer / 4) * numbers
 answer2
-first_names <- c("neha", "jinyuan", "stella")
+first_names <- c("Neha", "Jinyuan", "Stella")
 cars$speed + 5
 
 ```
 
 
-```
+```{r}
 library(tidyverse)
-
-coffee_spots <- read_csv("data/starbux.csv")
 
 mpg %>% 
   ggplot(aes(displ, hwy, color = class)) +
   geom_point()
 ```
 
-
-
-The above is not an example of literate coding.  
-
-Next up....  R Markdown, R Notebooks, and literate coding.
