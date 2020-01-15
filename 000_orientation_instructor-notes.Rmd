@@ -19,7 +19,7 @@ title: "Orientation / Instructor Notes"
 3. Click the "Open in Browser" button
 
 > Students should do exercise_00.Rmd (preview and open in browser)
-> Answers can be found in answers_00.Rmd
+> Answers can be found in answers_00.Rmd or answers_00.nb.html
 
 ## RStudio environment and R 
 
@@ -63,4 +63,14 @@ mpg %>%
   ggplot(aes(displ, hwy, color = class)) +
   geom_point()
 ```
+
+## Next
+
+Optionally, use [00 Literate Programming notebook](00_import-data_literate-programming.nb.html) to reiterate import, export, packages, rendered R Markdown, reports, etc.
+
+## Next
+
+Data Wrangling with 01_dplyr.Rmd.  Use select slides/index.html to illustrate concepts.
+
+Follow with exercise_01.Rmd and answers_01.nb.html
 
