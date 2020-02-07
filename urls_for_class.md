@@ -1,7 +1,7 @@
 URLs for Workshop
 ================
 John Little
-2020-01-14
+2020-02-07
 
 ## Introduction to R
 
@@ -12,10 +12,10 @@ Repository](https://github.com/libjohn/intro2r-code)
 
 ### Surveys / Questions
 
-  - [Pre-Survey](https://forms.gle/2TFpaLbB6KSXGhsi9)
+  - [Pre-survey](https://forms.gle/kdgTR9dFPz9KnuLr8)
   - [Questions DURING
-    workshop](https://docs.google.com/document/d/1bToe1XxULs_VJYMXVBJ-Fk5AJRHVRyOxQ3PVnYVe3jg/edit?usp=sharing)
-  - [Post Survey](https://forms.gle/eB6SeDbCFRTmR8tq6)
+    workshop](https://docs.google.com/document/d/1ByiMj64yTJjSOzx8-2NFIoIyL2ZRH73-KuqEnBtSCFw/edit?usp=sharing)
+  - [Post-Survey](https://forms.gle/f4J221htDEsBKdp56)
 
 ### R Primers
 
@@ -39,9 +39,8 @@ Repository](https://github.com/libjohn/intro2r-code)
 
 ### ROpenLabs
 
-Pre-survey: \<\<\>\> Questions DURING the session:  
-\<\<\>\>
-
+  - [Meeting
+    times](https://rfun.library.duke.edu/portfolio/r_open_labs/)
   - [GitHub ROpenLabs](https://github.com/libjohn/ropenlabs)
   - [Master the
     Tidyverse](https://github.com/rstudio/master-the-tidyverse)

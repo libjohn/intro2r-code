@@ -20,9 +20,9 @@ output: github_document
 
 - Surveys
 
-    - [Pre-survey](https://forms.gle/dhzW1iS7mrfG5RLUA)
-    - [Questions DURING workshop](https://docs.google.com/document/d/12jSpxo25xKaJClatcS2n2waRuKysCqkVvXQecStFnAk/edit?usp=sharing)
-    - [Post-Survey](https://forms.gle/X4DNmLmRUsTq7wvTA)
+    - [Pre-survey](https://forms.gle/kdgTR9dFPz9KnuLr8)
+    - [Questions DURING workshop](https://docs.google.com/document/d/1ByiMj64yTJjSOzx8-2NFIoIyL2ZRH73-KuqEnBtSCFw/edit?usp=sharing)
+    - [Post-Survey](https://forms.gle/f4J221htDEsBKdp56)
     
 ## Resources
 
