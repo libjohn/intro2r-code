@@ -55,7 +55,7 @@ starwars_small %>%
 ```{r}
 starwars_small %>% 
   select(name, species, height, mass, birth_year) %>% 
-  arrange(species, desc(height), mass, name) %>% 
+  arrange(desc(height), mass, desc(name)) %>% 
   filter(species == "Human") 
   
 ```
@@ -65,7 +65,7 @@ starwars_small %>%
 ```{r}
 starwars_small %>% 
   select(name, species, height, mass, birth_year) %>% 
-  arrange(species, desc(height), mass, name) %>% 
+  arrange(desc(height), mass, desc(name)) %>% 
   filter(species == "Human") %>% 
   mutate(BMI = round(height / mass, 2))
 ```
@@ -74,9 +74,8 @@ starwars_small %>%
 
 ```{r}
 starwars %>% 
-  count(mass) %>% 
-  tidyr::drop_na() %>% 
-  arrange(desc(n))
+  count(mass, sort = TRUE) %>% 
+  drop_na(mass) 
 ```
 
 ## Summarize
