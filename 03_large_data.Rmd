@@ -30,6 +30,7 @@ library(tidyverse)
 library(data.table)
 library(fs)
 library(feather)
+library(vroom)
 ```
 
 
@@ -69,6 +70,17 @@ Or, after the first import, write out as a [feather file](https://blog.rstudio.c
 write_feather(flights2, "data/flights.feather")
 
 flights_feather_df <- read_feather("data/flights.feather")
+```
+
+
+## Vroom
+
+**Use THIS**.  This new package works well and allows for the selection of columns.  https://vroom.r-lib.org/reference/vroom.html
+
+```{r}
+v_data <- vroom("data/2008.zip", col_select = starts_with("D"))
+
+v_data
 ```
 
 
