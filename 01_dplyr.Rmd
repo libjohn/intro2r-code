@@ -13,6 +13,8 @@ output: html_notebook
 - Count
 - Summarize
 
+Instructor Slides slides/index.html#13
+
 ```{r}
 library(tidyverse)   # includes dplyr
 library(dplyr)       # this line is redundant and serves only to emphasize the focus on dplyr

@@ -9,6 +9,7 @@ title: "Orientation / Instructor Notes"
 1. Create a Blank R Notebook (prose [w R Markdown] & code chunks)
 1. Save the file:  hello_notebook.Rmd
 1. Preview the file:  *Ctrl+Shift+K* 
+2. Instructor demo in a new notebook
 2. Insert Code Chunk and `library(tidyverse) ; library(fs)`
 2. fs::dir_create("data")  -- click New Folder ; data
 2. Insert Code Chunk and `write_csv(mpg, "data/mpg2.csv")`
@@ -18,10 +19,13 @@ title: "Orientation / Instructor Notes"
 3. Preview the file:  *Ctrl+Shift+K* 
 3. Click the "Open in Browser" button
 
-> Students should do exercise_00.Rmd (preview and open in browser)
+> Students should open the intro2r-code project
+> Do exercise_00.Rmd (preview and open in browser)
 > Answers can be found in answers_00.Rmd or answers_00.nb.html
 
 ## RStudio environment and R 
+
+INSTRUCTOR Demo
 
 
 ```{r}
