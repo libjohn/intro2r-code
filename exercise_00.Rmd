@@ -10,25 +10,32 @@ Goals:
 
 > ANSWER can be found in exercise_00_answers.Rmd file
 
-## Directions
-
-For the workshop, we've prebuilt a data set that has information about menus in Duke's Brodhead Center from three restaurants.  
-
-1. From the File menu, open a New R Notebook:  `File > New File > R Notebook`
-2. Add a code chunk at/around line 20.  (Hint: *Ctrl+Alt+I*)
-3. Load the `tidyverse` library package in that code-chunk.  Run that code chunk
-4. Insert another new code chunks and follow the steps in below.
-
-
 ## Exercise: Data Structures & Vector Types
 
-5. Using what you've seen in class, if `data/brodheadCenter.csv` is a CSV (comma separated values) file, how would you load the file into a new object called `brodhead`?
+1.  Load the tidyverse libary package
 
-6. Make a code chunk and display your new `brodhead` data frame?
+```{r}
+library(tidyverse)
+```
 
-7.  `starwars` is an on-board dataset that comes with the tidyverse.  Make a new code chunk and display that data.  
 
-8.  Copy and paste the following code into a new code chunk in your new file.  
+2. Fill in the blanks.  Using what you've seen in class, if `data/brodheadCenter.csv` is a CSV (comma separated values) file, how would you load the file into a new object called `brodhead`?
+
+```{r}
+_____  <- read_csv(________)
+```
+
+
+3. Display your new `brodhead` data frame?
+
+```{r}
+
+```
+
+
+4.  `starwars` is an on-board dataset that comes with the tidyverse.  Insert a new code chunk and display that data.  
+
+5.  Copy and paste the following code into a new code chunk in your new file.  
 
 ```{r}
 starwars %>% 
@@ -39,7 +46,7 @@ starwars %>%
 
 BONUS
 
-9. Take a look at the structure of the `brodhead` object.
+6. Take a look at the structure of the `brodhead` object.
     - How many observations (rows) are there?
     - How many variables (columns) are there?
     - How many of the variables are numeric data?

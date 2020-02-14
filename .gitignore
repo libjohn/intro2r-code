@@ -6,7 +6,10 @@ rsconnect
 
 # A few specific files
 exercise_00.nb.html
+exercise_00_answers.nb.html
 erercise_01.nb.html
+exercise_01_answers.nb.html
+
 
 # History files
 .Rhistory
