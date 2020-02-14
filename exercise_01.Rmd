@@ -23,12 +23,23 @@ We've prebuilt a data set that has information about menus in Duke's Brodhead Ce
 
 
 a. Add a code chunk and Load the `tidyverse` library package
+
+```{r}
+library(tidyverse)
+```
+
+
 b. Insert a code chunk and import (`read_csv()`) the brodhead practice data from the `data` directory.  Assign the imported data to an object name, e.g. "brodhead"
     
 
+```{r}
+brodhead <- read.csv("data/brodheadCenter.csv")
+```
+
+
 Now you are ready to make new code chunks and follow the steps in Exercise 1 (below).
 
-> Answers can be found in the answer_01.Rmd file
+> Answers can be found in the exercise_01_answers.Rmd file
 
 
 ### Exercise:  Data Wrangling
@@ -37,17 +48,53 @@ All of the following questions are based on the sample of restaurants represente
 
 1. Which restaurant has the lowest cost item and what is the item?
 
+```{r}
+brodhead %>% 
+  _______(cost) %>% 
+  select(name, type, itemName, cost)
+```
+
+
+
 2. Which restaurant has the most expensive item(s)?  What are those item(s)?
+
+```{r}
+brodhead %>% 
+  ____(____(cost)) %>% 
+  select(name, type, itemName, cost)
+```
+
 
 3. At the Brodhead Center, how many of the entrees (found in the `menuType` variable) cost eight dollars?
 
+
+```{r}
+brodhead %>% 
+  ______(cost == _, menuType == "______") %>% 
+  select(name, menuType, itemName, cost)
+```
+
+
 4. The head of Duke dining is considering reducing prices at the Brodhead Center. Using what we've learned in class, write code that will calculate a new variable (`halfPrice`) that contains items at half price.
 
+```{r}
+brodhead %>% 
+  ______(halfPrice = (____ / 2)) %>% 
+  select(name, itemName, cost, halfPrice)
+```
+
+
 5. How many entrees are in the dataset (`menuType` variable)? How many desserts 
+
+```{r}
+brodhead %>% 
+  _____(menuType)
+# You can use `filter()` to limit by menuType
+```
     
 ## Answers
 
-> Answers can be found in the answer_01.Rmd file
+> Answers can be found in the exercise_01_answers.Rmd file
 
 ## Quiz
 

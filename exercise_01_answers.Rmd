@@ -7,14 +7,14 @@ output: html_notebook
 
 a. Load the `tidyverse` library package
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 ```
 
 
-b.
+b. Import data
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 brodhead <- read_csv("data/brodheadCenter.csv")
 ```
 
@@ -61,6 +61,7 @@ expensive_items <- brodhead %>%
   filter(type == "restaurant",
          cost == max(cost)) %>% 
   select(name, itemName) 
+
 expensive_items
 ```
 
@@ -114,4 +115,14 @@ brodhead %>%
   count(menuType)
 # You can use `filter()` to limit by menuType
 ```
+
+#### Alternative Answer
+
+```{r}
+brodhead %>% 
+  count(menuType) %>% 
+  filter(menuType == "entree") %>% 
+  pull(n)
+```
+
 
