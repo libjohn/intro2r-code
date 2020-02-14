@@ -33,23 +33,63 @@ INSTRUCTOR Demo
 
 cars
 View(cars)
+```
 
+
+```{r}
 # See help in the Help tab, type the following in the Console tab
 ?cars
 ?View
-# See Also, from the Menubar:  Help > Cheatsheets
 
+```
+
+
+```{r}
 5 + 5
+```
+
+
+```{r}
 answer <- 5 + 5
+```
+
+
+```{r}
+answer 
+```
+
+
+```{r}
 numbers <- seq(3,45, by = 4)
-answer
 numbers
+```
+
+
+```{r}
 answer * numbers
+```
+
+
+```{r}
 answer2 <- (answer / 4) * numbers
 answer2
-first_names <- c("Neha", "Jinyuan", "Stella")
-cars$speed + 5
+```
 
+
+```{r}
+first_names <- c("Neha", "Jinyuan", "Stella")
+first_names
+```
+
+
+```{r}
+paste("Hello", first_names, sep = " ")
+```
+
+
+```{r}
+cars
+cars$speed + 5
 ```
 
 ## Library Packages
@@ -58,11 +98,13 @@ cars$speed + 5
 - load each time
 - tour of the tidyverse loaded packages
 
-    - Use code below to introduce the idea of categorical data
-
 ```{r}
 library(tidyverse)
+```
 
+## Bonus visualization
+
+```{r}
 mpg %>% 
   ggplot(aes(displ, hwy, color = class)) +
   geom_point()
@@ -70,11 +112,8 @@ mpg %>%
 
 ## Next
 
-Optionally, use [00 Literate Programming notebook](00_import-data_literate-programming.nb.html) to reiterate import, export, packages, rendered R Markdown, reports, etc.
-
-## Next
-
 Data Wrangling with 01_dplyr.Rmd.  Use select slides/index.html to illustrate concepts.
 
 Follow with exercise_01.Rmd and answers_01.nb.html
 
+> Optionally, use [00 Literate Programming notebook](00_import-data_literate-programming.nb.html) to reiterate import, export, packages, rendered R Markdown, reports, etc.
