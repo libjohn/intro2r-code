@@ -8,7 +8,7 @@ Goals:
 - Create a R Notebook
 - Import a dataset using `reader::read_csv()`
 
-> ANSWER can be found in answers_00.Rmd file
+> ANSWER can be found in exercise_00_answers.Rmd file
 
 ## Directions
 
