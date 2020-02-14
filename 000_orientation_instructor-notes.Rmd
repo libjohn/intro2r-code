@@ -8,13 +8,18 @@ title: "Orientation / Instructor Notes"
 1. Ask students to create a blank new RStudio Project: "hello world"
 1. Create a Blank R Notebook (prose [w R Markdown] & code chunks)
 1. Save the file:  hello_notebook.Rmd
-1. Preview the file:  *Ctrl+Shift+K* 
-2. Instructor demo in a new notebook
+1. Preview the file:  *Ctrl+Shift+K*
+1. switch back to first project: "intro2r-code" 
+2. Instructor demo a new notebook
+
+
 2. Insert Code Chunk and `library(tidyverse) ; library(fs)`
 2. fs::dir_create("data")  -- click New Folder ; data
+
 2. Insert Code Chunk and `write_csv(mpg, "data/mpg2.csv")`
 2. Insert Code Chunk and `mpg_2 <- read_csv("data/mpg2.csv")`
 2. Insert Code Chunk and `mpg_2`
+
 3. Save the file:  hello_notebook.Rmd
 3. Preview the file:  *Ctrl+Shift+K* 
 3. Click the "Open in Browser" button
@@ -94,15 +99,19 @@ cars$speed + 5
 
 ## Library Packages
 
+Review
+
 - install once
 - load each time
-- tour of the tidyverse loaded packages
+- overview the tidyverse loaded packages
 
 ```{r}
-library(tidyverse)
+library(tidyverse)  #this should be at the top
 ```
 
 ## Bonus visualization
+
+ggplot2 is a visualization pacakge and part of the tidyverse.
 
 ```{r}
 mpg %>% 
