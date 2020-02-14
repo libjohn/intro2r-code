@@ -4,6 +4,10 @@ _book
 _bookdown_files
 rsconnect
 
+# A few specific files
+exercise_00.nb.html
+erercise_01.nb.html
+
 # History files
 .Rhistory
 .Rapp.history
