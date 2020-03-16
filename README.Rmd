@@ -4,7 +4,7 @@ author: "John Little"
 date: "`r Sys.Date()`"
 output: github_document
 ---
-<!-- Edit the README.Rmd.  Readme.md is auto genererated --> 
+<!-- Edit the README.Rmd.  Readme.md is auto generated --> 
 
 ## README
 
@@ -12,7 +12,7 @@ output: github_document
 
 ### Links
 
-- Repo / Code
+- Repository / Code
 
     - https://github.com/libjohn/intro2r-code
     

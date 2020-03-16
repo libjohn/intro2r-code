@@ -3,7 +3,7 @@ Intro to R
 John Little
 2020-03-16
 
-<!-- Edit the README.Rmd.  Readme.md is auto genererated -->
+<!-- Edit the README.Rmd.  Readme.md is auto generated -->
 
 ## README
 
@@ -11,7 +11,7 @@ John Little
 
 ### Links
 
-  - Repo / Code
+  - Repository / Code
     
       - <https://github.com/libjohn/intro2r-code>
 
