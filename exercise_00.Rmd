@@ -53,4 +53,4 @@ BONUS
     
     HINT:  You can use the `glimpse() function`
 
-> ANSWER can be found in answers_00.Rmd file
+> ANSWER can be found in exercise_00_answers.Rmd file
