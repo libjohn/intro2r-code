@@ -8,6 +8,8 @@ output: github_document
 
 ## README
 
+1. Attendance:  https://forms.gle/nvW7KFReGoh8c13g7
+
 ### Links
 
 - Repo / Code
@@ -20,9 +22,9 @@ output: github_document
 
 - Surveys
 
-    - [Pre-survey](https://forms.gle/kdgTR9dFPz9KnuLr8)
-    - [Questions DURING workshop](https://docs.google.com/document/d/1ByiMj64yTJjSOzx8-2NFIoIyL2ZRH73-KuqEnBtSCFw/edit?usp=sharing)
-    - [Post-Survey](https://forms.gle/f4J221htDEsBKdp56)
+    - [Pre-survey](https://forms.gle/BpqwQLwArSddVerz5)
+    - Questions during workshop:  Use Zoom Chat
+    - [Post-Survey](https://forms.gle/xKTVmtijMJYVAFxB9)
     
 ## Resources
 

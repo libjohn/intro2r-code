@@ -1,11 +1,13 @@
 Intro to R
 ================
 John Little
-2020-02-07
+2020-03-16
 
 <!-- Edit the README.Rmd.  Readme.md is auto genererated -->
 
 ## README
+
+1.  Attendance: <https://forms.gle/nvW7KFReGoh8c13g7>
 
 ### Links
 
@@ -19,10 +21,9 @@ John Little
 
   - Surveys
     
-      - [Pre-survey](https://forms.gle/kdgTR9dFPz9KnuLr8)
-      - [Questions DURING
-        workshop](https://docs.google.com/document/d/1ByiMj64yTJjSOzx8-2NFIoIyL2ZRH73-KuqEnBtSCFw/edit?usp=sharing)
-      - [Post-Survey](https://forms.gle/f4J221htDEsBKdp56)
+      - [Pre-survey](https://forms.gle/BpqwQLwArSddVerz5)
+      - Questions during workshop: Use Zoom Chat
+      - [Post-Survey](https://forms.gle/xKTVmtijMJYVAFxB9)
 
 ## Resources
 

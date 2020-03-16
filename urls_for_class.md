@@ -1,14 +1,32 @@
 URLs for Workshop
 ================
 John Little
-2020-02-07
+2020-03-16
+
+## Attendance
+
+1.  <https://forms.gle/nvW7KFReGoh8c13g7>
+
+## Pre Survey
+
+2.  <https://forms.gle/BpqwQLwArSddVerz5>
 
 ## Introduction to R
 
-[Slide Deck](https://rfun.library.duke.edu/intro2r/slides)
-
 [Shareable Code: GitHub
 Repository](https://github.com/libjohn/intro2r-code)
+
+[Video](https://youtu.be/NtfHcNlwSEY)
+
+[Slide Deck](https://rfun.library.duke.edu/intro2r/slides)
+
+### Links
+
+  - Surveys
+    
+      - [Pre-survey](https://forms.gle/BpqwQLwArSddVerz5)
+      - Questions during workshop: Use Zoom Chat
+      - [Post-Survey](https://forms.gle/xKTVmtijMJYVAFxB9)
 
 ### Surveys / Questions
 
@@ -21,6 +39,8 @@ Repository](https://github.com/libjohn/intro2r-code)
 
   - <https://rstudio.cloud/learn/primers/>
   - <https://education.rstudio.com/learn/>
+  - [Master the
+    Tidyverse](https://github.com/rstudio/master-the-tidyverse)
 
 ### Rfun @ Duke
 
@@ -36,11 +56,3 @@ Repository](https://github.com/libjohn/intro2r-code)
   - [Slack](https://ropenlabs.slack.com)  
   - [Sympa List](https://lists.duke.edu/sympa/info/ropenlabs)
   - [RTP Rladies](https://www.meetup.com/rladies-rtp/events/)
-
-### ROpenLabs
-
-  - [Meeting
-    times](https://rfun.library.duke.edu/portfolio/r_open_labs/)
-  - [GitHub ROpenLabs](https://github.com/libjohn/ropenlabs)
-  - [Master the
-    Tidyverse](https://github.com/rstudio/master-the-tidyverse)
