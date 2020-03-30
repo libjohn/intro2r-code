@@ -1,7 +1,7 @@
 Intro to R
 ================
 John Little
-2020-03-16
+2020-03-30
 
 <!-- Edit the README.Rmd.  Readme.md is auto generated -->
 
@@ -35,6 +35,11 @@ John Little
 
 ### License
 
-Shareable via Creative Commons:
-[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)<br> ![“CC
-BY-NC”](images/by-nc.png)
+![“CC BY-NC”](images/by-nc88x31.png)<br>
+[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
+
+This work is licensed under a [Creative Commons
+Attribution-NonCommercial 4.0 International
+License](http://creativecommons.org/licenses/by-nc/4.0/) </a>. All
+content in this repository are licensed under the Creative Commons 4.0 -
+Attribution-NonCommercial License.

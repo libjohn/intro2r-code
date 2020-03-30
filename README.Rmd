@@ -36,5 +36,11 @@ output: github_document
 
 ### License
 
+!["CC BY-NC"](images/by-nc88x31.png)<br>
+[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)  
 
-Shareable via Creative Commons: [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)<br> !["CC BY-NC"](images/by-nc.png){height=30px}
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
+</a>.
+All content in this repository are licensed under the Creative Commons 4.0 - Attribution-NonCommercial License.
+
+
