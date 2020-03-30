@@ -1,9 +1,20 @@
-Intro to R
+Introduction to R and the Tidyverse
 ================
 John Little
 2020-03-30
 
 <!-- Edit the README.Rmd.  Readme.md is auto generated -->
+
+<!-- badges: start -->
+
+[![DOI](https://zenodo.org/badge/220037220.svg)](https://zenodo.org/badge/latestdoi/220037220)
+
+[![Lifecycle
+Badge](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
+[![Launch Rstudio
+Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/libjohn/intro2r-code/master?urlpath=rstudio)
+<!-- badges: end -->
 
 ## README
 

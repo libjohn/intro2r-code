@@ -1,0 +1,31 @@
+Type: Compendium
+Package: Introduction to R: Workshop
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Supporting materials (slides, code, and data) help
+    you learn R and the Tidyverse.
+License: What license it uses
+Depends: 
+    data.table,
+    dplyr,
+    feather,
+    fs,
+    ggpubr,
+    knitr,
+    microbenchmark,
+    profvis,
+    pryr,
+    rmarkdown,
+    sessioninfo,
+    skimr,
+    tidyverse,
+    vroom,
+    xaringan
+Encoding: UTF-8
+LazyData: true
