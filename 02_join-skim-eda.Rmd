@@ -78,7 +78,7 @@ There are different types of joins (e.g. inner, left, right, full, etc.).  See t
 ```{r join-data}
 sw_joined <- starwars %>% 
   left_join(favorability_popularity_rating, by = "name") %>% 
-  select(1, 14, 2:14) 
+  select(1, 15, everything()) 
 
 sw_joined %>% 
   arrange(desc(fav_rating))
