@@ -73,7 +73,7 @@ March 16, 2021  -- 6:30pm to 8:30pm
 
 
 ```{r echo=FALSE}
-countdown::countdown(minutes = 20, seconds = 15)
+countdown::countdown(minutes = 15, seconds = 00)
 ```
 
 .f6.black-40[
