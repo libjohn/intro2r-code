@@ -1,10 +1,9 @@
 Introduction to R and the Tidyverse
 ================
 John Little
-2020-03-30
+2021-06-08
 
 <!-- Edit the README.Rmd.  Readme.md is auto generated -->
-
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/220037220.svg)](https://zenodo.org/badge/latestdoi/220037220)
@@ -18,31 +17,31 @@ Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/libjohn/
 
 ## README
 
-1.  Attendance: <https://forms.gle/nvW7KFReGoh8c13g7>
+1.  Attendance: <https://forms.gle/>
 
 ### Links
 
-  - Repository / Code
-    
-      - <https://github.com/libjohn/intro2r-code>
+-   Repository / Code
 
-  - Slides - <https://rfun.library.duke.edu/intro2r/slides>
+    -   <https://github.com/libjohn/intro2r-code>
 
-  - Video - <https://youtu.be/NtfHcNlwSEY>
+-   Slides - <https://rfun.library.duke.edu/intro2r/slides>
 
-  - Surveys
-    
-      - [Pre-survey](https://forms.gle/BpqwQLwArSddVerz5)
-      - Questions during workshop: Use Zoom Chat
-      - [Post-Survey](https://forms.gle/xKTVmtijMJYVAFxB9)
+-   Video - <https://youtu.be/NtfHcNlwSEY>
+
+-   Surveys
+
+    -   [Pre-survey](https://forms.gle/BpqwQLwArSddVerz5)
+    -   Questions during workshop: Use Zoom Chat
+    -   [Post-Survey](https://forms.gle/xKTVmtijMJYVAFxB9)
 
 ## Resources
 
-  - [Rfun](https://rfun.library.duke.edu/)
-  - [Center for Data & Visualization
+-   [Rfun](https://rfun.library.duke.edu/)
+-   [Center for Data & Visualization
     Services](https://library.duke.edu/data/)
-  - CDVS Email: <AskData@duke.edu>
-  - [RStudio Primers](https://rstudio.cloud/learn/primers/)
+-   CDVS Email: <AskData@duke.edu>
+-   [RStudio Primers](https://rstudio.cloud/learn/primers/)
 
 ### License
 

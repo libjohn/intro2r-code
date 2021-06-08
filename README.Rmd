@@ -17,7 +17,7 @@ output: github_document
 
 ## README
 
-1. Attendance:  https://forms.gle/nvW7KFReGoh8c13g7
+1. Attendance:  https://forms.gle/
 
 ### Links
 
