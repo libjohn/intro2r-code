@@ -7,7 +7,7 @@ John Little
 <!-- badges: start -->
 <!-- [![DOI](https://zenodo.org/badge/220037220.svg)](https://zenodo.org/badge/latestdoi/220037220) -->
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3733771-blue "DOI")](https://doi.org/10.5281/zenodo.3733771)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3733771%20(Latest%20Version%20Release)-blue "DOI")](https://doi.org/10.5281/zenodo.3733771)
 
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--3600--0972-A6CE39?logo=ORCID&logoColor=A6CE39 "ORCID")](https://orcid.org/0000-0002-3600-0972)
 
