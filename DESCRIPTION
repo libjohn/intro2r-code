@@ -1,16 +1,16 @@
 Type: Compendium
 Package: Introduction to R: Workshop
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.1
+Title: Introduction to R and the Tidyverse
+Version: 1.0.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "John",
+           family = "Little",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Supporting materials (slides, code, and data) help
-    you learn R and the Tidyverse.
-License: What license it uses
+           email = "John.Little@Duke.edu",
+           comment = c(ORCID = "0000-0002-3600-0972"))
+Description: Supporting materials (slides, code, and data) help you learn R and the Tidyverse.
+License: CC BY-NC
+URL: https://github.com/libjohn/intro2r-code
 Depends: 
     data.table,
     dplyr,
